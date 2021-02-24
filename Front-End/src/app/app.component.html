@@ -1,8 +1,11 @@
 <header>
+  <a id="logo" href="../index.html">Johann Nieto</a>
   <ul>
-    <li id="logo"><a href="../index.html">Johann Nieto</a></li>
-    <li><a [routerLink]="['/works']" [routerLinkActive]="['actived']"></a></li>
-    <li><a [routerLink]="['/about-me']" [routerLinkActive]="['actived']"></a></li>
-    <li><a [routerLink]="['/contact']" [routerLinkActive]="['actived']"></a></li>
+    <li><a [routerLink]="['/works']" [routerLinkActive]="['actived']">Works</a></li>
+    <li><a [routerLink]="['/about-me']" [routerLinkActive]="['actived']">About me</a></li>
+    <li><a [routerLink]="['/contact']" [routerLinkActive]="['actived']">Contact</a></li>
   </ul>
 </header>
+<section id="content">
+  <router-outlet></router-outlet>
+</section>

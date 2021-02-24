@@ -4,10 +4,11 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { WorksComponent } from './components/works/works.component';
+import { HomeComponent } from './home/home.component';
 
 //Array de rutas
 const appRoutes: Routes = [
-  {path: '', component: AppComponent},
+  {path: '', component: HomeComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'works', component: WorksComponent},
   {path: 'about-me', component: AboutMeComponent},
