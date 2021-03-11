@@ -4,7 +4,7 @@
 }
 
 @font-face{
-  font-family: "source sans";
+  font-family: "sourcesans";
   src: url('../assets/Fonts/SourceSansPro-Regular.ttf')
 }
 
@@ -14,7 +14,7 @@
 }
 
 body{
-
+  background-attachment: fixed;
 }
 
 header{
@@ -23,12 +23,59 @@ header{
   width: 100%;
   height: 90px;
   position: fixed;
+  margin-top: -20px;
+  margin-left: -10px;
 }
 
 header #logo{
-  background-color: #485550;
-  font-family: "work sans";
-  width: 600px;
-  height: 260px;
+  background-color:#485550;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 45px;
+  z-index: 100;
 }
 
+#logo{
+  text-decoration: none;
+  color: #F4F6F0;
+  font-size: 45px;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+#logo strong{
+  font-size: 50px;
+  color: #C0EB6A;
+}
+
+header ul{
+  display: block;
+  height: inherit;
+  margin: 0px auto;
+  float: right;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0px auto;
+}
+
+header ul li a{
+  display: inline-block;
+  text-decoration: none;
+  color:#485550;
+  height: inherit;
+  font-family: "source sans";
+  padding: 0 40px;
+  margin-top: 20px;
+  font-family: "sourcesans";
+  font-size: 32px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+header ul li a:hover{
+  background-size: 100% 3px;
+}
