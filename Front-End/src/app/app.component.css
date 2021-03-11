@@ -4,6 +4,31 @@
 }
 
 @font-face{
-  font-family: "work sans";
+  font-family: "source sans";
   src: url('../assets/Fonts/SourceSansPro-Regular.ttf')
 }
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+
+}
+
+header{
+  background-color: #C0EB6A;
+  display: inline-block;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+}
+
+header #logo{
+  background-color: #485550;
+  font-family: "work sans";
+  width: 600px;
+  height: 260px;
+}
+
