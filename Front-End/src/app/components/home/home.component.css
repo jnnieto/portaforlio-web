@@ -1,0 +1,11 @@
+#hero-container {
+    height: 600px;
+    background-color: #3C3F58;
+}
+
+#hero-background {
+    position: absolute;
+    width: 0;
+    height: 600px;
+    transition: 1s ease-in-out;
+}
