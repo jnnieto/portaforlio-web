@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public welcome: string;
+  public myName : string;
+  public aboutMe : string;
+
+  constructor() {
+    this.welcome = "Hi there!"
+    this.myName = "I'm Nicolas"
+    this.aboutMe = "Software development student passionate about the world of technology, " +
+    "eager to continue learning new development tools that strengthen my professional skills.";
+  }
 
   ngOnInit(): void {
   }
 
+  setColorToWelcome () {
+    return '#f4f5db';
+  }
 }
