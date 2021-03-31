@@ -84,3 +84,106 @@ header ul li a:hover {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+footer {
+    background-color: #2E3047;
+}
+
+.logo-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-footer a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-footer-container ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu-footer-container ul li a {
+    display: block;
+    text-decoration: none;
+    color: #3BBA9C;
+}
+
+.menu-footer-container ul li a:hover {
+    color: white;
+}
+
+:root {
+    --facebook: #3b5998;
+    --twitter: #00aced;
+    --linkedin: #0e76a8;
+    --twitch: #6441a5;
+    --github: #171515;
+}
+
+.redes-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li {
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+}
+
+.redes-container ul li a {
+    display: block;
+    padding: 8px;
+    background: #333;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    transition: .2s;
+}
+
+.redes-container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
+}
+
+.redes-container ul li .facebook:hover {
+    background: var(--facebook);
+}
+
+.redes-container ul li .linkedin:hover {
+    background: var(--linkedin);
+}
+
+.redes-container ul li .twitch:hover {
+    background: var(--twitch);
+}
+
+.redes-container ul li .twitter:hover {
+    background: var(--twitter);
+}
+
+.redes-container ul li .github:hover {
+    background: var(--github);
+}
+
+.right-side {
+    text-align: center;
+    color: #707793;
+    padding: 10px;
+}
