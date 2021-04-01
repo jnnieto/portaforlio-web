@@ -25,7 +25,6 @@
   text-align: center;
   padding: 60px;
   color: #2E3047;
-  font-style: ;
 }
 
 #skills {
@@ -128,4 +127,10 @@
   width: 20%;
   height: 20%;
   margin-left: 40%;
+}
+
+.show-more {
+  padding: auto;
+  margin-top: 50fupx;
+  margin-left: 220px;
 }
