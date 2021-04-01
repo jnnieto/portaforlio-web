@@ -1,7 +1,7 @@
 <header>
   <a id="logo" href="../index.html">Johann Nieto</a>
   <ul>
-    <li><a class="home" [routerLinkActive]="['actived']">Home</a></li>
+    <li><a class="home" [routerLink]="['/']" [routerLinkActive]="['actived']">Home</a></li>
     <li><a [routerLink]="['/works']" [routerLinkActive]="['actived']">Works</a></li>
     <li><a [routerLink]="['/about-me']" [routerLinkActive]="['actived']">About me</a></li>
     <li><a [routerLink]="['/contact']" [routerLinkActive]="['actived']">Contact</a></li>
@@ -11,5 +11,31 @@
   <router-outlet></router-outlet>
 </section>
 <footer>
-  <p>Holl</p>
+  <div class="logo-footer">
+    <a href="../index.html">Johann Nieto</a>
+  </div>
+  <div class="menu-footer-container">
+    <ul>
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li><a [routerLink]="['/works']">Works</a></li>
+      <li><a [routerLink]="['/about-me']">About me</a></li>
+      <li><a [routerLink]="['/contact']">Contact</a></li>
+    </ul>
+  </div>
+  <div class="redes-container">
+    <ul>
+      <li><a class="facebook" href="https://www.facebook.com/johann.nieto.15" target="_blank"><i class="fa fa-facebook"
+            aria-hidden="true"></i></a></li>
+      <li><a class="linkedin" href="https://www.linkedin.com/in/johann-nicol%C3%A1s-nieto-c%C3%A1rdenas-7629881b3/"
+          target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a class="twitch" href="https://www.twitch.tv/jnnietocard15" target="_blank"><i class="fa fa-twitch"
+            aria-hidden="true"></i></a></li>
+      <li><a class="twitter" href="https://twitter.com/niconieto3" target="_blank"><i class="fa fa-twitter"
+            aria-hidden="true"></i></a>
+      </li>
+      <li><a class="github" href="https://github.com/jnnieto" target="_blank"><i class="fa fa-github"
+            aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <div class="right-side">Copyright &copy; 2021 Johann Nicolas Nieto Cardenas. All rights reserved.</div>
 </footer>

@@ -6,7 +6,7 @@
         <h2>{{ welcome }}</h2>
         <h1>{{ myName }}</h1>
         <p>{{ aboutMe }}</p>
-        <button mat-flat-button color="primary">About me</button>
+        <button [routerLink]="['/about-me']" mat-flat-button color="primary">About me</button>
       </div>
 
       <div class="col" id="code-home">
