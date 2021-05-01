@@ -11,6 +11,7 @@ import { WorksComponent } from './components/works/works.component';
 import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule, NgbProgressbar } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,11 +27,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     routing,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    NgbModule
   ],
   providers: [
     appRoutingProviders
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    NgbProgressbar
+  ]
 })
 export class AppModule { }
