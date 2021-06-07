@@ -1,20 +1,15 @@
 <header>
-  <div class="logo-nav-container">
-    <a class="logo" href="../index.html">Johann Nieto</a>
-    <input type="checkbox" name="check" id="check">
-    <label for="check" class="show-menu">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </label>
-    <ul class="menu">
-      <li><a class="home" [routerLink]="['/']" [routerLinkActive]="['actived']">Home</a></li>
-      <li><a [routerLink]="['/works']" [routerLinkActive]="['actived']">Works</a></li>
-      <li><a [routerLink]="['/about-me']" [routerLinkActive]="['actived']">About me</a></li>
-      <li><a [routerLink]="['/contact']" [routerLinkActive]="['actived']">Contact</a></li>
-      <label for="check" class="close-menu">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </label>
-    </ul>
-  </div>
+  <p>
+    <mat-toolbar color="accent">
+      <mat-toolbar-row>
+        <span>JOHANN NIETO</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </p>
 </header>
 <section id="content">
   <router-outlet></router-outlet>

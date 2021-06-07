@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { routing, appRoutingProviders } from './app.routing';
-
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -12,6 +11,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule, NgbProgressbar } from '@ng-bootstrap/ng-bootstrap';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { NgbModule, NgbProgressbar } from '@ng-bootstrap/ng-bootstrap';
     routing,
     BrowserAnimationsModule,
     MatButtonModule,
-    NgbModule
+    NgbModule,
+    MaterialModule
   ],
   providers: [
     appRoutingProviders
