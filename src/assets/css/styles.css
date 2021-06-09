@@ -1,41 +1,3 @@
-.example-spacer {
-    flex: 1 1 auto;
-  }
-  
-.logo-footer {
-    text-align: center;
-    padding: 20px;
-}
-
-.logo-footer a {
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-}
-
-.menu-footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-footer-container ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.menu-footer-container ul li a {
-    display: block;
-    text-decoration: none;
-    color: #3BBA9C;
-}
-
-.menu-footer-container ul li a:hover {
-    color: white;
-}
-
 :root {
     --facebook: #3b5998;
     --twitter: #00aced;
@@ -52,11 +14,12 @@
 }
 
 .redes-container ul li {
-    display: inline-block;
+    display: block;
     margin: 0 10px;
     width: 30px;
     height: 25px;
     text-align: center;
+    margin-top: 15px;
 }
 
 .redes-container ul li a {
@@ -95,64 +58,7 @@
     background: var(--github);
 }
 
-.right-side {
+.right-side p {
     text-align: center;
-    color: #707793;
-    padding: 10px;
-}
-
-@media only screen and (max-width: 1014px) {
-
-  .show-menu,
-  .close-menu {
-    display: block;
-  }
-
-  header {
-    height: 100px;
-  }
-
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 0;
-  }
-
-  header ul {
-    position: fixed;
-    padding: 100px 0;
-    width: 100%;
-    height: 100vh;
-    background: #2E3047;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    z-index: 100;
-    transition: .4s;
-  }
-  header ul li {
-    display: block;
-  }
-
-  .close-menu {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-
-  .show-menu {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-
-  #check:checked ~ .menu {
-    right: 0;
-  }
-
-  .home {
-    background: none;
-    animation: none;
-    border: none;
-  }
+    color: white
 }
