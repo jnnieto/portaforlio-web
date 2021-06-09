@@ -1,5 +1,5 @@
 
-  <div>
+  <div class="example-container">
     <mat-toolbar color="accent">
       <mat-toolbar-row>
         <span class="logo">JOHANN NIETO</span>
@@ -10,10 +10,9 @@
         </button>
       </mat-toolbar-row>
     </mat-toolbar>
-  </div>
-  <mat-sidenav-container class="example-sidenav-container" autosize>
-    <mat-sidenav #sidenav position="end" class="example-sidenav" mode="side" opened="true">
-      <mat-nav-list class="dashboard">
+    <mat-sidenav-container class="example-sidenav-container" autosize>
+      <mat-sidenav #sidenav position="end" class="example-sidenav" mode="side">
+        <mat-nav-list class="dashboard">
         <mat-list-item role="listitem">
           <mat-icon color="primary">home</mat-icon> Home
         </mat-list-item>
@@ -30,17 +29,17 @@
       <div class="redes-container">
         <ul>
           <li><a class="facebook" href="https://www.facebook.com/johann.nieto.15" target="_blank"><i class="fa fa-facebook"
-                aria-hidden="true"></i></a></li>
+            aria-hidden="true"></i></a></li>
           <li><a class="linkedin" href="https://www.linkedin.com/in/johann-nicol%C3%A1s-nieto-c%C3%A1rdenas-7629881b3/"
-              target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          <li><a class="twitch" href="https://www.twitch.tv/jnnietocard15" target="_blank"><i class="fa fa-twitch"
-                aria-hidden="true"></i></a></li>
-          <li><a class="twitter" href="https://twitter.com/niconieto3" target="_blank"><i class="fa fa-twitter"
+            target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a class="twitch" href="https://www.twitch.tv/jnnietocard15" target="_blank"><i class="fa fa-twitch"
+              aria-hidden="true"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/niconieto3" target="_blank"><i class="fa fa-twitter"
                 aria-hidden="true"></i></a>
           </li>
           <li><a class="github" href="https://github.com/jnnieto" target="_blank"><i class="fa fa-github"
                 aria-hidden="true"></i></a></li>
-        </ul>
+              </ul>
       </div>
       <!--<div class="right-side">
         <p> Copyright &copy; 2021</p>  
@@ -48,6 +47,8 @@
         <p>All rights reserved.</p>
       </div> -->
     </mat-sidenav>
-</mat-sidenav-container>
-<section id="content">
-</section>
+    <router-outlet></router-outlet>
+  </mat-sidenav-container>
+</div>
+  <section id="content">
+  </section>

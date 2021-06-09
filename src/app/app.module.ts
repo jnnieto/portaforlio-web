@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule, NgbProgressbar } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialModule } from './material/material.module';
+import { FlexModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     MatButtonModule,
     NgbModule,
-    MaterialModule
+    MaterialModule,
+    FlexModule
   ],
   providers: [
     appRoutingProviders

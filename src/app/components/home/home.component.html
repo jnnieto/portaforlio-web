@@ -1,0 +1,61 @@
+<section class="home-container" fxLayout="column" fxLayoutAlign="center center">
+  <div class="foto-container" fxLayout="row" fxLayout.xs="column">
+    <img src="../../../assets/images/fotome.jpg" alt="">
+    <div class="hi-container" fxLayout="column" fxLayoutAlign="center center">
+      <h1>Hi there!</h1>
+      <h2>I´m Nicolas</h2>
+    </div>
+  </div>
+  <h2>Software development student passionate about the world of technology, eager to continue learning new
+    development tools that strengthen my professional skills.</h2>
+
+  <button mat-raised-button color="primary" routerLink="/about-me">About me</button>
+</section>
+<section class="skills-container" fxLayout="row" fxLayoutAlign="center stretch" fxLayout.xs="column">
+    <h1>Skills</h1>
+    <mat-card class="skill-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image">
+              <mat-icon>code</mat-icon>
+          </div>
+          <mat-card-title>Front-End</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/images/frontend.svg" alt="">
+        <mat-card-content>
+          <p>{{ frontend }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="accent">Ver más...</button>
+        </mat-card-actions>
+      </mat-card>
+    <mat-card class="skill-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image">
+              <mat-icon>construction</mat-icon>
+          </div>
+          <mat-card-title>Logic</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/images/logic.svg" alt="">
+        <mat-card-content>
+          <p>{{ logic }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="accent">Ver más...</button>
+        </mat-card-actions>
+      </mat-card>
+    <mat-card class="skill-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image">
+              <mat-icon>api</mat-icon>
+          </div>
+          <mat-card-title>Back-End</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/images/backend.svg" alt="">
+        <mat-card-content>
+          <p>{{ backend }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="accent">Ver más...</button>
+        </mat-card-actions>
+      </mat-card>
+</section>
