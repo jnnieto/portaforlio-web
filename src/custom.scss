@@ -29,3 +29,17 @@ $candy-app-theme: mat-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($candy-app-theme);
+$color-outline: white;
+
+mat-form-field {
+   &.border-red {
+      // to change border color
+      ::ng-deep .mat-form-field-outline {
+           color: $color-outline !important;
+      }
+      // to change label color
+      ::ng-deep .mat-form-field-label {
+           color: $color-outline !important;
+      }
+   }
+}

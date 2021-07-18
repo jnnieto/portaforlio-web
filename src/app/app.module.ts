@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { routing, appRoutingProviders } from './app.routing';
 import { AppComponent } from './app.component';
@@ -12,8 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule, NgbProgressbar } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialModule } from './material/material.module';
-import { FlexModule } from '@angular/flex-layout';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,14 +23,15 @@ import { FlexModule } from '@angular/flex-layout';
     HomeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FormsModule,
+    ReactiveFormsModule,
     routing,
     BrowserAnimationsModule,
     MatButtonModule,
     NgbModule,
     MaterialModule,
-    FlexModule
+    FlexLayoutModule
   ],
   providers: [
     appRoutingProviders

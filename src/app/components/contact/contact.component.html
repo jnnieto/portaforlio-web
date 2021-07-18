@@ -1,1 +1,51 @@
-<p>contact works!</p>
+<div class="contact-container"
+    fxLayout
+    fxLayoutAlign="center"
+    fxLayoutGap="0"
+    fxLayoutGap.xs="0">
+    <form [formGroup]="contactForm" (ngSubmit)="onContact($event)">
+        <mat-card class="contact-card" fxLayout="column" fxLayoutAlign="center center">
+            <!--Cabecera de la card-->
+            <mat-card-header>
+                <mat-card-title> CONTÁCTAME </mat-card-title>
+              </mat-card-header>
+            <mat-card-content fxLayout="row" fxLayout.xs="column">
+                <div class="info-contact-container" fxLayout="column" fxFlex="50">
+                    <a href="mailto:elcorreoquequieres@correo.com"><mat-icon color="primary">email</mat-icon> niconieto1506@gmail.com </a>
+                    <a href="https://goo.gl/maps/9xJRMmnQ4PnVjZW36" target="blank"><mat-icon color="primary">location_on</mat-icon> Fontibón, Bogotá D.C, Colombia </a>
+                    <p><mat-icon color="primary">phone</mat-icon> ( + 57 ) 310 578 9672 </p>
+                </div>
+                <div class="form-container" fxFlex="50">
+                    <mat-form-field class="contact-width-input">
+                        <mat-label> Nombres y Apellidos </mat-label>
+                        <input matInput type="text" placeholder="Ingresa tu nombre y tu apellido" formControlName="name" required>
+                        <mat-icon matPrefix color="primary">person</mat-icon>
+                        <mat-error>
+                            Digite su nombre y apellido correctamente
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="contact-width-input">
+                        <mat-label> Correo electrónico </mat-label>
+                        <input matInput type="email" placeholder="Ingresa tu correo electrónico" formControlName="email" required>
+                        <mat-icon matPrefix color="primary">email</mat-icon>
+                        <mat-error *ngIf="contactForm.controls.email.hasError('email') && !contactForm.controls.email.hasError('required')">
+                            Digita un correo electrónico válido...
+                        </mat-error>
+                        <mat-error *ngIf="contactForm.controls.email.hasError('required')">
+                            Este campo es<strong> obligatorio</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="contact-width-input">
+                        <mat-label> Mensaje </mat-label>
+                        <textarea matInput placeholder="Ingresa el mensaje" formControlName="message" required></textarea>  
+                        <mat-icon matPrefix color="primary">keyboard</mat-icon>         
+                        <mat-error>
+                            Digite un mensaje
+                        </mat-error>
+                    </mat-form-field>
+                    <button mat-raised-button color="primary">ENVIAR</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </form>
+</div>
